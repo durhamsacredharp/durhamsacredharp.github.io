@@ -1,3 +1,13 @@
+body {
+    background-color: rgba(242, 242, 242, 0.7);
+    color: #333;
+}
+
 .fill {
     min-height: 100vh;
+}
+
+.highlight {
+    border-top: 2px solid #56d3fc;
+    border-bottom: 2px solid #56d3fc;
 }
