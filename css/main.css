@@ -10,3 +10,9 @@ body {
     border-top: 2px solid #56d3fc;
     border-bottom: 2px solid #56d3fc;
 }
+
+#map {
+    border: 0;
+    width: 100%;
+    min-height: 40rem;
+}
