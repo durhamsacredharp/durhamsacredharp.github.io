@@ -11,6 +11,14 @@ body {
     border-bottom: 2px solid #56d3fc;
 }
 
+#map-link {
+    text-decoration: underline;
+}
+
+#map-link:hover {
+    color: #007bff;
+}
+
 #map {
     border: 0;
     width: 100%;
