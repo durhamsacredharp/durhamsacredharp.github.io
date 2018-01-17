@@ -9,6 +9,12 @@ body {
 .highlight {
     border-top: 2px solid #56d3fc;
     border-bottom: 2px solid #56d3fc;
+    margin-bottom: 1rem;
+    padding: 1rem 0 0 0;
+}
+
+.highlight > p {
+    padding: 0
 }
 
 #map-link {
@@ -17,10 +23,4 @@ body {
 
 #map-link:hover {
     color: #007bff;
-}
-
-#map {
-    border: 0;
-    width: 100%;
-    min-height: 40rem;
 }
