@@ -40,9 +40,10 @@
                         <span class="font-italic font-weight-bold">We sing every 2nd and 4th Saturday 2pm - 4pm</span> at
                         <a href="#map" class="font-italic font-weight-bold" id="map-link">Antioch House, 66 Crossgate, Durham</a>.</strong>
                     </p>
-                    <p>Our next singings are on:
-                        <span class="font-italic font-weight-bold" id="upcoming-singings">27th January, 10th February, and 24th February.</span>
-                    </p>
+
+                    <!-- upcoming singings html inserted with javascript -->
+                    <div id="upcoming-singings"></div>
+
                 </div>
 
                 <p>Come along to sing with us! Our singings are open to all. We aren't a choir as we don't rehearse or perform
@@ -53,7 +54,8 @@
 
                 <p>We have loaner books for you to sing from and you can buy your own book for £25 cash.</p>
 
-                <p>Feel free to bring along children. You'll be responsible for your own children but there are toys to play with and baby changing facilities.</p>
+                <p>Feel free to bring along children. You'll be responsible for your own children but there are toys to play
+                    with and baby changing facilities.</p>
             </div>
         </div>
         <div class="row mt-4" id="map">
@@ -110,18 +112,38 @@
             </div>
         </div>
     </div>
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" integrity="sha256-ABVkpwb9K9PxubvRrHMkk6wmWcIHUE9eBxNZLXYQ84k="
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/later/1.2.0/later.min.js" integrity="sha256-Ot6f49xEDCNepxlyI6IjkxZVNRvYdfdc60+bdTZ8c4Y="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-recur/1.0.7/moment-recur.min.js" integrity="sha256-07vcphslAbnX38ZWHdVjIuhMpwrUAYIofqWU/wv/1NU="
-        crossorigin="anonymous"></script> -->
 
+    <script type="text/javascript">
+         "use strict";
 
-    <!-- <script type="text/javascript">
-        let saturdays;
-        saturdays = moment.recur().every("Saturday").daysOfWeek().every([1, 3]).weeksOfMonthByDay();
-        // console.log(saturdays)
-    </script> -->
+        // 2nd & 4th Saturdays of the month
+        let sched = later.parse.recur().on(7).dayOfWeek().on(2, 4).dayOfWeekCount();
+
+        // next 3 occurences
+        let nextThree = later.schedule(sched).next(3);
+
+        // options for DateString formatting
+        let options = {
+            month: 'long',
+            day: 'numeric'
+        };
+
+        let firstNext = (nextThree[0].toLocaleDateString("en-GB", options));
+        let secondNext = (nextThree[1].toLocaleDateString("en-GB", options));
+        let thirdNext = (nextThree[2].toLocaleDateString("en-GB", options));
+
+        let upcomingsingings =
+            '<p>Our next singings are on: <span class="font-italic font-weight-bold"><span id="next-singing">' +
+            firstNext + '</span><span class="font-weight-normal">, </span><span id="second-next-singing">' + secondNext +
+            '</span><span class="font-weight-normal">, and </span><span id="third-next-singing">' + thirdNext +
+            '</span><span class="font-weight-normal">.</span></span></p>';
+
+        document.getElementById('upcoming-singings').innerHTML = upcomingsingings;
+
+    </script>
 </body>
 
 </html>
