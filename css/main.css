@@ -7,14 +7,19 @@ body {
 }
 
 .highlight {
-    border-top: 2px solid #56d3fc;
-    border-bottom: 2px solid #56d3fc;
+/*     border-top: 2px solid #56d3fc; */
+/*     border-bottom: 2px solid #56d3fc; */
     margin-bottom: 1rem;
     padding: 1rem 0 0 0;
+    background-color: #ffea004d;
 }
 
-.highlight > p {
-    padding: 0
+/* .highlight > p {
+     padding: 0
+} */
+
+#upcoming-singings p {
+    margin-bottom: 0
 }
 
 #map-link {
