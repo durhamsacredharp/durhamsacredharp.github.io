@@ -18,7 +18,7 @@ window.onload = function () {
 	let thirdNext = (nextThree[2].toLocaleDateString("en-GB", options));
 
 	let upcomingsingings =
-        "<p>Our next singings are on: <span class=\"font-italic font-weight-bold\"><span id=\"next-singing\">" +
+        "<p>Our next singings are on: <span class=\"font-italic font-weight-bold\"><span id=\"next-singing\">Saturday " +
         firstNext + "</span><span class=\"font-weight-normal\">, </span><span id=\"second-next-singing\">" +
         secondNext +
         "</span><span class=\"font-weight-normal\">, and </span><span id=\"third-next-singing\">" + thirdNext +
