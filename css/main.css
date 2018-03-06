@@ -11,7 +11,7 @@ body {
 /*     border-bottom: 2px solid #56d3fc; */
     margin-bottom: 1rem;
     padding: 1rem 0;
-    background-color: #ffea004d;
+    background-color: rgba(255, 234, 0, 0.3);
 }
 
 /* .highlight > p {
