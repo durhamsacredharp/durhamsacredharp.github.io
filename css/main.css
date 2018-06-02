@@ -7,16 +7,17 @@ body {
 }
 
 .highlight {
-/*     border-top: 2px solid #56d3fc; */
-/*     border-bottom: 2px solid #56d3fc; */
-    margin-bottom: 1rem;
     padding: 1rem 0;
     background-color: rgba(255, 234, 0, 0.3);
 }
 
-/* .highlight > p {
-     padding: 0
-} */
+.notification {
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: rgba(255, 104, 104, 0.5)
+}
 
 #upcoming-singings p {
     margin-bottom: 0
