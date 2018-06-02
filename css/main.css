@@ -14,8 +14,6 @@ body {
 .notification {
     margin-bottom: 1rem;
     padding: 1rem 0;
-    padding-right: 0px;
-    padding-left: 0px;
     background-color: rgba(255, 104, 104, 0.5)
 }
 
