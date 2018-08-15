@@ -9,6 +9,7 @@ a {
 
 a:hover {
     color: #2859a3;
+    text-decoration: none;
 }
 
 .fill {
@@ -28,8 +29,4 @@ a:hover {
 
 #upcoming-singings p {
     margin-bottom: 0
-}
-
-#map-link:hover {
-    color: #007bff;
 }
