@@ -1,5 +1,14 @@
 body {
-    background-color: #EDEDED;
+    background-color: #ededed;
+}
+
+a {
+    color: #2859a3;
+    border-bottom: 2px solid #2859a3;
+}
+
+a:hover {
+    color: #2859a3;
 }
 
 .fill {
@@ -19,10 +28,6 @@ body {
 
 #upcoming-singings p {
     margin-bottom: 0
-}
-
-#map-link {
-    text-decoration: underline;
 }
 
 #map-link:hover {
