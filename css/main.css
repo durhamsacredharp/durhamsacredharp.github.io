@@ -12,6 +12,10 @@ a:hover {
     text-decoration: none;
 }
 
+.main-logo {
+    max-height: 300px;
+}
+
 .fill {
     min-height: 100vh;
 }
@@ -27,6 +31,31 @@ a:hover {
     background-color: rgba(255, 104, 104, 0.5)
 }
 
-#upcoming-singings p, #notification p {
+#upcoming-singings p,
+#notification p {
     margin-bottom: 0
+}
+
+.contact-logo {
+    max-width: 50px;
+}
+
+.updates-subscribe-button {
+    background-color: #2859a3;
+    color: white;
+}
+
+.navbar {
+    background-color: #2859a3;
+    border-radius: 2px;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }

@@ -29,68 +29,95 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-10 offset-1 col-lg-8 offset-lg-2 pt-4 text-center">
-                <img src="images/dsh_logo_website.svg" class="img-fluid" style="max-height: 300px;" alt="Durham Sacred Harp">
+                <img src="images/dsh_logo_website.svg" class="img-fluid main-logo" alt="Durham Sacred Harp">
             </div>
         </div>
+
+        <div class="row mt-4">
+            <nav class="navbar navbar-expand-lg col-10 offset-1 col-lg-8 offset-lg-2">
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>Menu</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mx-auto pl-4 pr-5 pl-lg-2 pr-lg-2 mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#next_singings">Next Singings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#venue">Venue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#updates-signup">Get Updates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#more-information">More Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
         <div class="row mt-4 mb-4">
             <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                 <p>
-                    <a href="#more-info">Sacred Harp</a> is a community folk hymn singing tradition from the United States. The Sacred Harp is
+                    <a href="#more-info">Sacred Harp</a> is a community folk hymn singing tradition from the United
+                    States. The Sacred Harp is
                     also the name of the book we sing from.</p>
                 <p>
-                    <strong>Come along to sing with us!</strong> Our singings are open to all. We aren't a choir as we don't rehearse
-                    or perform and no-one's in charge. Everyone just sings for their own enjoyment. You don't need to be
+                    <strong>Come along to sing with us!</strong> Our singings are open to all. We aren't a choir as we
+                    don't rehearse
+                    or perform and no-one's in charge. Everyone just sings for their own enjoyment. You don't need to
+                    be
                     able to read music yet or have a "good" voice to come along.</p>
-               <!--   <div class="notification px-3 px-md-5" id="notification">
+                <!--   <div class="notification px-3 px-md-5" id="notification">
                 Special announcements go here
                      <p>Unfortunately the singings on <strong>13th</strong> and <strong>27th October</strong> are off. We'll be singing again on <strong>27th November</strong></p>
                 </div> -->
 
                 <div class="highlight px-3 px-md-5 mb-4" id="next_singings">
                     <p>
-                        <span class="font-italic font-weight-bold">We sing every 2nd and 4th Saturday 2pm - 4pm</span> at
-                        <a href="#map" class="font-italic font-weight-bold" id="map-link">Antioch House, 66 Crossgate, Durham</a>.
+                        <span class="font-italic font-weight-bold">We sing every 2nd and 4th Saturday 2pm - 4pm</span>
+                        at
+                        <a href="#map" class="font-italic font-weight-bold" id="map-link">Antioch House, 66 Crossgate,
+                            Durham</a>.
                     </p>
 
                     <!-- upcoming singings html inserted with javascript -->
                     <div id="upcoming-singings"></div>
 
                 </div>
-        
-                <div id="updates_signup" class="pt-3 pb-3 mb-4 text-center border">
-                    
-                    <h5>Get updates about our singings</h5>
-                    <form action="https://tinyletter.com/durhamsacredharp" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/durhamsacredharp', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-                        class="form-inline">
-                        <div class="form-group mx-auto">
-                            <input type="email" class="form-control text-center mt-2 mb-2" placeholder="email@example.com" name="email" id="tlemail"
-                            />
-                            <input type="hidden" value="1" name="embed" />
 
-                            <button class="btn ml-4" style="background-color: #2859a3; color: white;" type="submit">Subscribe</button>
-                        </div>
-
-                        <small class="form-text px-2 px-md-5">We use TinyLetter to send email updates. You'll receive an email from them to confirm you want to subscribe. This is <a href="https://mailchimp.com/legal/privacy/">their privacy policy</a>.</small>
-                    </form>
-                </div>
-
-                <p>The words of most of the songs are from the Christian faith but singers of all religions and none are welcome.</p>
+                <p>The words of most of the songs are from the Christian faith but singers of all religions and none
+                    are welcome.</p>
 
                 <p>We have loaner books for you to sing from and you can buy your own book for £25 cash.</p>
 
-                <p>Feel free to bring along children. You'll be responsible for your own children but there are toys to play
+                <p>Feel free to bring along children. You'll be responsible for your own children but there are toys to
+                    play
                     with and baby changing facilities.</p>
             </div>
         </div>
-        <div class="row mt-4" id="map">
+        <div class="row mt-4" id="venue">
             <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                 <h2 class="text-center">
                     <u>Venue</u>
                 </h2>
                 <p>
-                    <a href="https://www.google.com/maps/place/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre/@54.7761972,-1.5821623,17z/data=!3m1!4b1!4m5!3m4!1s0x487e7d8abc0a764b:0x766ab837ecc03183!8m2!3d54.7758477!4d-1.5799069?hl=en-GB">Antioch House</a> is the parish centre of St Margaret's Church which is over the road. It's
-                    <a href="https://www.google.com/maps/dir/Durham+Train+Station,+Station+Approach,+Durham/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre,+66+Crossgate,+Durham+DH1+4PR/@54.7778203,-1.5829481,17z/am=t/data=!4m14!4m13!1m5!1m1!1s0x487e7df4b3ef5e51:0xa17d2107d3aabd3c!2m2!1d-1.5817251!2d54.7793784!1m5!1m1!1s0x487e7d8abc0a764b:0x766ab837ecc03183!2m2!1d-1.5799736!2d54.7761972!3e3?hl=en-GB">less than 10 minutes on foot from the train station</a> and
-                    <a href="https://www.google.com/maps/dir/Bus+Station,+Durham/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre,+66+Crossgate,+Durham+DH1+4PR/@54.7767393,-1.5816614,18z/am=t/data=!4m14!4m13!1m5!1m1!1s0x487e7df526427d15:0x47e764fbc246810d!2m2!1d-1.5821659!2d54.777366!1m5!1m1!1s0x487e7d8abc0a764b:0x766ab837ecc03183!2m2!1d-1.5799736!2d54.7761972!3e2?hl=en-GB">less than 5 minutes from the bus station</a>.</p>
+                    <a href="https://www.google.com/maps/place/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre/@54.7761972,-1.5821623,17z/data=!3m1!4b1!4m5!3m4!1s0x487e7d8abc0a764b:0x766ab837ecc03183!8m2!3d54.7758477!4d-1.5799069?hl=en-GB">Antioch
+                        House</a> is the parish centre of St Margaret's Church which is over the road. It's
+                    <a href="https://www.google.com/maps/dir/Durham+Train+Station,+Station+Approach,+Durham/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre,+66+Crossgate,+Durham+DH1+4PR/@54.7778203,-1.5829481,17z/am=t/data=!4m14!4m13!1m5!1m1!1s0x487e7df4b3ef5e51:0xa17d2107d3aabd3c!2m2!1d-1.5817251!2d54.7793784!1m5!1m1!1s0x487e7d8abc0a764b:0x766ab837ecc03183!2m2!1d-1.5799736!2d54.7761972!3e3?hl=en-GB">less
+                        than 10 minutes on foot from the train station</a> and
+                    <a href="https://www.google.com/maps/dir/Bus+Station,+Durham/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre,+66+Crossgate,+Durham+DH1+4PR/@54.7767393,-1.5816614,18z/am=t/data=!4m14!4m13!1m5!1m1!1s0x487e7df526427d15:0x47e764fbc246810d!2m2!1d-1.5821659!2d54.777366!1m5!1m1!1s0x487e7d8abc0a764b:0x766ab837ecc03183!2m2!1d-1.5799736!2d54.7761972!3e2?hl=en-GB">less
+                        than 5 minutes from the bus station</a>.</p>
                 <p class="text-center mb-0">
                     <small>Click on the map below for Google Maps</small>
                 </p>
@@ -99,12 +126,12 @@
                 </a>
                 <p class="text-right">
                     <small>Map data ©2018 Google
-                        <a href="https://www.google.com/intl/en-GB_GB/help/terms_maps.html" style="text-decoration: none;">Terms</a>
+                        <a href="https://www.google.com/intl/en-GB_GB/help/terms_maps.html">Terms</a>
                     </small>
                 </p>
             </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4" id="contact-us">
             <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                 <h2 class="text-center mb-3">
                     <u>Contact us</u>
@@ -112,7 +139,7 @@
                 <div class="row mt-3">
                     <div class="col-3 col-sm-2">
                         <a href="mailto:mail@durhamsacredharp.co.uk">
-                            <img src="images/email.svg" alt="Email" style="max-width: 50px;">
+                            <img src="images/email.svg" alt="Email" class="contact-logo">
                         </a>
                     </div>
                     <div class="col-9 col-sm-10">
@@ -124,7 +151,7 @@
                 <div class="row mt-3">
                     <div class="col-3 col-sm-2">
                         <a href="https://twitter.com/durham_sh">
-                            <img src="images/twitter.svg" alt="Twitter" style="max-width: 50px;">
+                            <img src="images/twitter.svg" alt="Twitter" class="contact-logo">
                         </a>
                     </div>
                     <div class="col-9 col-sm-10">
@@ -133,35 +160,61 @@
                         </p>
                     </div>
                 </div>
+                <div id="updates-signup" class="pt-3 pb-3 mt-4 mb-4 text-center border">
+
+                    <h5>Get updates about our singings</h5>
+                    <form action="https://tinyletter.com/durhamsacredharp" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/durhamsacredharp', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+                        class="form-inline">
+                        <div class="form-group mx-auto">
+                            <input type="email" class="form-control text-center mt-2 mb-2" placeholder="email@example.com"
+                                name="email" id="tlemail" />
+                            <input type="hidden" value="1" name="embed" />
+
+                            <button class="btn ml-4 updates-subscribe-button" type="submit">Subscribe</button>
+                        </div>
+
+                        <small class="form-text px-2 px-md-5">We use TinyLetter to send occasional email updates. You'll receive
+                            an email from them to confirm you want to subscribe. This is <a href="https://mailchimp.com/legal/privacy/">their
+                                privacy policy</a>.</small>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row mb-4" id="more-info">
+        <div class="row mb-4" id="more-information">
             <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                 <h2 class="text-center mb-3">
                     <u>More information about Sacred Harp</u>
                 </h2>
                 <p>
-                    <a href="https://en.wikipedia.org/wiki/Sacred_Harp">The Wikipedia page on Sacred Harp</a> is an excellent place to find out more about the history and conventions
+                    <a href="https://en.wikipedia.org/wiki/Sacred_Harp">The Wikipedia page on Sacred Harp</a> is an
+                    excellent place to find out more about the history and conventions
                     of Sacred Harp singing.</p>
                 <p>
-                    <a href="http://www.ukshapenote.org.uk/">UK Shapenote</a> has information about other UK and Europe singings from the Sacred Harp and other shapenote
+                    <a href="http://www.ukshapenote.org.uk/">UK Shapenote</a> has information about other UK and Europe
+                    singings from the Sacred Harp and other shapenote
                     books.
                 </p>
                 <p>
-                    <a href="https://www.youtube.com/results?search_query=sacred+harp">YouTube</a> has hundreds (thousands?) of recordings and videos from across the Sacred Harp community.</p>
+                    <a href="https://www.youtube.com/results?search_query=sacred+harp">YouTube</a> has hundreds
+                    (thousands?) of recordings and videos from across the Sacred Harp community.</p>
                 <p>
-                    <a href="https://www.youtube.com/watch?v=YHUfHNEZDPc">Awake My Soul</a> is a great documentary about Sacred Harp singing.</p>
+                    <a href="https://www.youtube.com/watch?v=YHUfHNEZDPc">Awake My Soul</a> is a great documentary
+                    about Sacred Harp singing.</p>
                 <p>
-                    <a href="https://web.archive.org/web/20170530194352/http://www.newcastleshapenote.co.uk/">Newcastle Shapenote</a> sings Sacred Harp and other shapenote music
+                    <a href="https://web.archive.org/web/20170530194352/http://www.newcastleshapenote.co.uk/">Newcastle
+                        Shapenote</a> sings Sacred Harp and other shapenote music
                     <span class="font-italic">every Tuesday from 7.30pm at the Bridge Hotel</span> and
                     <span class="font-italic">every 2nd Sunday from 8pm in Gateshead</span>.</p>
             </div>
         </div>
     </div>
-
-    <script src="js/later.min.js" integrity="sha384-vEZdS7b843boNPx50Z7Dyz32INueQjqBguuwXR35L8je2BiVqU5yiFRKsIU5jyJ7" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/later.min.js" integrity="sha384-vEZdS7b843boNPx50Z7Dyz32INueQjqBguuwXR35L8je2BiVqU5yiFRKsIU5jyJ7"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-<!--     <script src="js/fathom.js"></script> -->
 
 </body>
 
