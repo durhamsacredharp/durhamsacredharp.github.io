@@ -59,3 +59,11 @@ a:hover {
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
+.nav-link::-moz-selection {
+    background-color: none;
+}
+
+.nav-link::selection {
+    background-color: none;
+}
