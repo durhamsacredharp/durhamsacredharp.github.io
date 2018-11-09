@@ -3,5 +3,9 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://fathom.edjw.co.uk https://matomo.edjw.co.uk; script-src 'self' https://fathom.edjw.co.uk https://matomo.edjw.co.uk
-   https://maxcdn.bootstrapcdn.com https://code.jquery.com; style-src 'self' https://stackpath.bootstrapcdn.com;
+  Content-Security-Policy:
+  default-src 'self';
+  img-src 'self'
+  data: https://matomo.edjw.co.uk;
+  script-src 'self' https://matomo.edjw.co.uk https://maxcdn.bootstrapcdn.com https://code.jquery.com;
+  style-src 'self' https://stackpath.bootstrapcdn.com;
