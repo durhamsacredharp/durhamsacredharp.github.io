@@ -38,5 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("hashchange", () => {
-	scrollBy(0, -57);
+	const navbarHeight = document.getElementById("navbar-row").offsetHeight + 10;
+	scrollBy(0, -navbarHeight);
 });
