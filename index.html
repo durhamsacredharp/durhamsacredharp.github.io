@@ -35,10 +35,8 @@
                 <img src="images/dsh_logo_website.svg" class="img-fluid main-logo" alt="Durham Sacred Harp">
             </div>
         </div>
-
-        <div class="row mt-4">
-            <!-- This should be sticky with .sticky-top but I can't get the offset to work-->
-            <nav class="navbar navbar-expand-lg col-10 offset-1 col-lg-8 offset-lg-2">
+        <div class="row mt-4 sticky-top" id="navbar-row">
+            <nav class="navbar navbar-default navbar-expand-lg col-10 offset-1 col-lg-8 offset-lg-2" id="navbar">
                 <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
                     aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span>Menu</span>
@@ -47,7 +45,7 @@
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav mx-auto pl-4 pr-5 pl-lg-2 pr-lg-2 mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#start">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#next_singings">Next Singings</a>
@@ -70,20 +68,24 @@
             </nav>
 
         </div>
-        <main class="mt-5">
+        <main id="main">
 
-            <div class="row mb-4">
+            <div class="row mt-5" id="start">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                    <h4 class="text-center pb-4">
+                        <strong>Come along to sing Sacred Harp in Durham!</strong>
+                    </h4>
+                    <p><a href="#more-information">Sacred Harp</a> is a <strong>community folk hymn singing</strong> tradition from the United States. The Sacred Harp is also the name of the book we sing from.
+                    </p>
                     <p>
-                        <a href="#more-information">Sacred Harp</a> is a community folk hymn singing tradition from the
-                        United States. The Sacred Harp is also the name of the book we sing from.</p>
-                    <p>
-                        <strong>Come along to sing with us!</strong> Our singings are open to all. We aren't a choir as
-                        we don't rehearse or perform and no-one's in charge. Everyone just sings for their own enjoyment. You don't need to be able to read music yet or have a "good" voice to come along.</p>
+                        <strong>Our singings are open to all.</strong> We aren't a choir as
+                        we don't rehearse or perform and no-one's in charge. Everyone just sings for their own
+                        enjoyment.<strong> You don't need to be able to read music yet or have a "good" voice to come along.</strong> Singers of all religions and none are welcome.</p>
                     <!--   <div class="notification px-3 px-md-5" id="notification">
                 Special announcements go here
                      <p>Unfortunately the singings on <strong>13th</strong> and <strong>27th October</strong> are off. We'll be singing again on <strong>27th November</strong></p>
                 </div> -->
+
 
                     <div class="highlight px-3 px-md-5 mb-4" id="next_singings">
                         <p>
@@ -98,24 +100,19 @@
 
                     </div>
 
-                    <p>The words of most of the songs are from the Christian faith but singers of all religions and
-                        none
-                        are welcome.</p>
+                    <p>We have loaner books for you to sing from. If you want your own copy you can buy a book for £25 cash.</p>
 
-                    <p>We have loaner books for you to sing from and you can buy your own book for £25 cash.</p>
-
-                    <p>Feel free to bring along children. You'll be responsible for your own children but there are
-                        toys to
-                        play
-                        with and baby changing facilities.</p>
+                    <p>Feel free to bring along children. You'll be responsible for your own children but there are toys to play with and baby changing facilities.</p>
                 </div>
             </div>
+
             <div class="row mt-4" id="venue">
+
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h2 class="text-center pb-2">
                         <u>Venue</u>
                     </h2>
-                    <p class="text-center font-weight-bold">Antioch House, 66 Crossgate, Durham, DH1 4PR</p>
+                    <p class="text-center font-weight-bold"><a href="https://www.google.com/maps/place/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre/@54.7761972,-1.5821623,17z/data=!4m5!3m4!1s0x487e7d8abc0a764b:0x766ab837ecc03183!8m2!3d54.7758477!4d-1.5799069?hl=en-GB">Antioch House, 66 Crossgate, Durham, DH1 4PR</a></p>
                     <p>
                         <a href="https://www.google.com/maps/place/Antioch+House+%E2%80%93+St+Margaret's+Parish+Centre/@54.7761972,-1.5821623,17z/data=!3m1!4b1!4m5!3m4!1s0x487e7d8abc0a764b:0x766ab837ecc03183!8m2!3d54.7758477!4d-1.5799069?hl=en-GB">Antioch
                             House</a> is the parish centre of St Margaret's Church which is over the road. It's
@@ -139,6 +136,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="row mb-4" id="contact-us">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h2 class="text-center mb-3">
@@ -152,7 +150,7 @@
                         </div>
                         <div class="col-9 col-sm-10">
                             <p>Email us at
-                                <a href="mailto:mail@durhamsacredharp.co.uk">mail@durhamsacredharp.co.uk</a>
+                                <a class="wordwrap" href="mailto:mail@durhamsacredharp.co.uk">mail@durhamsacredharp.co.uk</a>
                             </p>
                         </div>
                     </div>
@@ -168,7 +166,8 @@
                             </p>
                         </div>
                     </div>
-                    <div id="updates-signup" class="pt-3 pb-3 mt-4 mb-4 text-center border">
+
+                    <div class="pt-3 pb-3 mt-4 mb-4 text-center border" id="get-updates">
 
                         <h5>Get updates about our singings</h5>
                         <form action="https://tinyletter.com/durhamsacredharp" method="post" target="popupwindow"
@@ -190,6 +189,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row mb-4" id="more-information">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h2 class="text-center mb-3">

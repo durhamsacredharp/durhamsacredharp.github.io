@@ -7,6 +7,10 @@ a {
     border-bottom: 2px solid #2859a3;
 }
 
+a.wordwrap {
+    word-wrap: break-word;
+}
+
 a:hover {
     color: #2859a3;
     text-decoration: none;
