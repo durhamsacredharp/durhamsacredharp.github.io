@@ -1,5 +1,5 @@
-"use strict";
-
+// "use strict";
+// Gets the dates of the next three singings on 2nd and 4th Saturdays
 document.addEventListener("DOMContentLoaded", () => {
 	const sched = later.parse.recur().on(7).dayOfWeek().on(2, 4)
 		.dayOfWeekCount();
@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
+	// Hides the menu if anywhere other than the menu is clicked
 	main.addEventListener("click", () => {
 		if (navbarToggler.classList.contains("show")) {
 			navbarButton.click();
@@ -37,6 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+// On page load, if there's a hash in the URL then scroll up to offset the sticky header
+document.addEventListener("DOMContentLoaded", () => {
+	if (window.location.hash) {
+		const navbarHeight = document.getElementById("navbar-row").offsetHeight + 10;
+		scrollBy(0, -navbarHeight);
+	}
+});
+
+// Scroll up if a new hash is clicked to offset the sticky header
 window.addEventListener("hashchange", () => {
 	const navbarHeight = document.getElementById("navbar-row").offsetHeight + 10;
 	scrollBy(0, -navbarHeight);
