@@ -1,3 +1,6 @@
+import './util.js';
+import './collapse.js';
+
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
